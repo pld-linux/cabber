@@ -4,7 +4,7 @@ Summary:	Cabber - console Jabber client
 Summary(pl):	Cabber - konsolowy klient Jabbera
 Name:		cabber
 Version:	0.4.0
-Release:	0.%{rc}.1
+Release:	0.%{_rc}.1
 License:	GPL
 Group:		Applications/Communications
 Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}-%{_rc}.tar.bz2
