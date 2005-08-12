@@ -1,16 +1,16 @@
-%define		_rc	test5
+%define		_rc	test1
 
 Summary:	Cabber - console Jabber client
 Summary(pl):	Cabber - konsolowy klient Jabbera
 Name:		cabber
-Version:	0.4.0
+Version:	0.5.0
 Release:	0.%{_rc}.1
 License:	GPL
 Group:		Applications/Communications
-Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}-%{_rc}.tar.bz2
-# Source0-md5:	f14914b71d6f6f5b9edddd2e883c3784
+Source0:	http://dl.sourceforge.net/%{name}/%{name}-%{version}-%{_rc}.tar.gz
+# Source0-md5:	3c500c721c167a39f5d0d49243a97514
 URL:		http://cabber.sourceforge.net/
-BuildRequires:	ncurses-devel
+BuildRequires:	ncurses-ext-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -40,5 +40,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc cabberrc.example Changelog README
+%doc ACKNOWLEDGEMENT cabberrc.example Changelog README
 %attr(755,root,root) %{_bindir}/*
