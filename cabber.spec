@@ -26,7 +26,8 @@ Cabber to konsolowy klient JAbbera
 rm -f missing
 
 %{__make} \
-	 CFLAGS="-I/usr/include/ncurses"
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -I/usr/include/ncurses"
 
 %install
 rm -rf $RPM_BUILD_ROOT
