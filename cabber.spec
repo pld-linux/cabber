@@ -1,7 +1,7 @@
 %define		_rc	test1
 
 Summary:	Cabber - console Jabber client
-Summary(pl.UTF-8):   Cabber - konsolowy klient Jabbera
+Summary(pl.UTF-8):	Cabber - konsolowy klient Jabbera
 Name:		cabber
 Version:	0.5.0
 Release:	0.%{_rc}.1
